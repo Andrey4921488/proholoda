@@ -1,0 +1,207 @@
+.top-nav {
+  background: #222;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.top-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.top-nav a:hover {
+  color: #ff9800;
+}
+
+body {
+  background-color: #ffefd5;
+}
+
+.top {
+  justify-content: space-around;
+  display: flex;
+  font-size: 20px;
+}
+.p1 {
+}
+.a {
+  text-decoration: none;
+  color: #000;
+}
+.left {
+  padding: 0;
+  margin: 0;
+  border: none;
+  display: block;
+  height: auto;
+}
+.right {
+  padding-top: 300px;
+  color: #000;
+  font-size: 100px;
+  text-align: center;
+}
+.head {
+  display: flex;
+}
+.bodyy {
+  margin-left: 500px;
+  display: flex;
+
+  max-width: 800px;
+}
+.carousel slide {
+  size: 100px;
+}
+.smakoluku {
+  text-align: center;
+  font-size: 100px;
+}
+.container {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+.card-bodydva {
+  margin-left: 35px;
+  margin-top: 50px;
+}
+.card-bodytri {
+  margin-left: 35px;
+  margin-top: 50px;
+}
+.card-bodyodin {
+  margin-left: 35px;
+}
+.inshi {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.kav {
+  text-align: center;
+  font-size: 50px;
+}
+.block {
+  max-width: 1500px;
+  margin-left: 200px;
+  text-align: center;
+
+  height: 1000px;
+}
+.last {
+  display: flex;
+  font-size: x-large;
+  padding-top: 20px;
+  background-color: grey;
+  margin-top: 225px;
+  padding-bottom: 50px;
+}
+.misce {
+  margin-top: 50px;
+  margin-left: 900px;
+}
+.chas {
+  margin-left: 100px;
+}
+#pro {
+  color: olive;
+  margin-top: 50px;
+  text-align: center;
+  font-size: xx-large;
+}
+.nas {
+  margin-top: 200px;
+  margin-left: 20px;
+  font-size: 50px;
+}
+.about {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: calc(33.333% - 20px);
+  }
+}
+@media (max-width: 768px) {
+  /* Зменшуємо розмір тексту */
+  .right {
+    font-size: 40px;
+    padding-top: 50px;
+  }
+
+  /* Дозволяємо контенту заповнювати всю ширину */
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Робимо картки повнорозмірними */
+  .card {
+    width: 90% !important;
+    margin: 10px 0;
+  }
+
+  /* Центруємо текст у футері */
+  .last {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Вирівнюємо навігацію */
+  .top-nav {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .top-nav a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  /* Робимо картки адаптивними */
+  .block {
+    max-width: 100%;
+    margin-left: 0;
+    height: auto;
+  }
+
+  /* Змінюємо розташування секції "Про нас" */
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nas {
+    font-size: 24px;
+    margin-top: 50px;
+  }
+
+  /* Зменшуємо розмір шрифту заголовків */
+  .kav,
+  .smakoluku {
+    font-size: 40px;
+  }
+}
