@@ -19,9 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelector(".menu-toggle").addEventListener("click", function(){" "}
   {document.querySelector(".top-nav").classList.toggle("show")});
 </script>;
-window.addEventListener("load", function () {
-  setTimeout(function () {
-    document.getElementById("preloader").style.display = "none";
-  }, 1000); // Прелоадер зникне через 1 секунду після завантаження сторінки
-});
+
+
 
